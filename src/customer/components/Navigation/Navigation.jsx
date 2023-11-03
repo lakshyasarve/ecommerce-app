@@ -147,7 +147,7 @@ export default function Navigation() {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="bg-white z-50">
+    <div className="bg-white pb-10">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
@@ -294,15 +294,14 @@ export default function Navigation() {
           Get free delivery on orders over $100
         </p>
 
-        <nav aria-label="Top" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <nav aria-label="Top" className="mx-auto">
           <div className="border-b border-gray-200">
-            <div className="flex h-16 items-center">
+            <div className="flex h-16 items-center px-11">
               <button
                 type="button"
-                className="relative rounded-md bg-white p-2 text-gray-400 lg:hidden"
+                className=" rounded-md bg-white p-2 text-gray-400 lg:hidden"
                 onClick={() => setOpen(true)}
               >
-                <span className="absolute -inset-0.5" />
                 <span className="sr-only">Open menu</span>
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
               </button>
